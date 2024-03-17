@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #308834;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+    gap: 60px;
+  }
+  
+  .player-container {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .player-container h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .card-stack {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+  }
+  
+  .card {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    width: 300px ;
+    height: auto ;
+  }
+  
+  /* Set position for each card */
+  .card:nth-child(n+2) {
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+  }
+  
+  .player-container button {
+    display: block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #ffd900;
+    color: #1f1111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .player-container button:hover {
+    background-color: #fce878fd;
+  }
+  
+
+  .btn {
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #235f25;
+    border: 2px solid #116d37;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #25a364;
+    border-color: #7dc887;
+  }
+
+  .message {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #555;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
